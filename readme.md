@@ -9,7 +9,6 @@ a) считали файл полностью асинхронно и потом посчитали пробелы;
       <img src="https://github.com/dr-number/larionov_semestr_7_lab_2-read_files_calc_spaces/blob/main/for_read_me/1.png">
       <p align="center">Чтение 3 txt файлов по 3 раза</p>
    </p>
-  <table border="1">
   <thead>
     <tr>
       <th>Файл</th>
@@ -21,7 +20,7 @@ a) считали файл полностью асинхронно и потом посчитали пробелы;
   </thead>
   <tbody>
     <tr>
-      <td rowspan="2">soviet_computers.txt</td> <!-- Объединяем строки для первого файла -->
+      <td rowspan="6">soviet_computers.txt</td> <!-- Объединяем строки для первого файла -->
       <td>12824</td>
       <td>882</td>
       <td>Считали файл полностью асинхронно и потом посчитали пробелы.</td>
