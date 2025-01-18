@@ -12,18 +12,18 @@ a) считали файл полностью асинхронно и потом
   <table>
 	<tbody>
 		<tr>
-			<td>№</td>
+			<td>№ попытки</td>
 			<td>Файл</td>
 			<td>Размер файла (байт)</td>
-			<td></td>
+			<td>Количество пробелов</td>
 			<td></td>
 			<td></td>
 		</tr>
 		<tr>
 			<td rowspan="6">1</td>
 			<td rowspan="6">simulation_theory.txt</td>
-			<td rowspan="6"></td>
-			<td rowspan="6"></td>
+			<td rowspan="6">12824</td>
+			<td rowspan="6">882</td>
 			<td rowspan="3"></td>
 			<td></td>
 		</tr>
@@ -46,8 +46,8 @@ a) считали файл полностью асинхронно и потом
 		<tr>
 			<td rowspan="6">2</td>
 			<td rowspan="6">soviet_computers.txt</td>
-			<td rowspan="6"></td>
-			<td rowspan="6"></td>
+			<td rowspan="6">14462</td>
+			<td rowspan="6">1046</td>
 			<td rowspan="3"></td>
 			<td></td>
 		</tr>
@@ -70,8 +70,8 @@ a) считали файл полностью асинхронно и потом
 		<tr>
 			<td rowspan="6">3</td>
 			<td rowspan="6">space.txt</td>
-			<td rowspan="6"></td>
-			<td rowspan="6"></td>
+			<td rowspan="6">6559</td>
+			<td rowspan="6">450</td>
 			<td rowspan="3"></td>
 			<td></td>
 		</tr>
