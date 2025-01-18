@@ -9,53 +9,85 @@ a) считали файл полностью асинхронно и потом посчитали пробелы;
       <img src="https://github.com/dr-number/larionov_semestr_7_lab_2-read_files_calc_spaces/blob/main/for_read_me/1.png">
       <p align="center">Чтение 3 txt файлов по 3 раза</p>
    </p>
-  <thead>
-    <tr>
-      <th>Файл</th>
-      <th>Размер (байт)</th>
-      <th>Кол-во пробелов</th>
-      <th>Метод</th>
-      <th>Время (ms)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td rowspan="6">soviet_computers.txt</td> <!-- Объединяем строки для первого файла -->
-      <td>12824</td>
-      <td>882</td>
-      <td>Считали файл полностью асинхронно и потом посчитали пробелы.</td>
-      <td>6,7719</td>
-    </tr>
-    <tr>
-      <td></td> <!-- Пустые ячейки для второго ряда -->
-      <td></td>
-      <td>Считали файл построчно и для каждой строки считаем пробелы.</td>
-      <td>6,7719</td>
-    </tr>
-    <tr>
-      <td></td> <!-- Пустые ячейки для второго ряда -->
-      <td></td>
-      <td>Считали файл построчно и для каждой строки считаем пробелы.</td>
-      <td>6,7719</td>
-    </tr>
-    <tr>
-      <td></td> <!-- Пустые ячейки для второго ряда -->
-      <td></td>
-      <td>Считали файл построчно и для каждой строки считаем пробелы.</td>
-      <td>6,7719</td>
-    </tr>
-    <tr>
-      <td></td> <!-- Пустые ячейки для второго ряда -->
-      <td></td>
-      <td>Считали файл построчно и для каждой строки считаем пробелы.</td>
-      <td>6,7719</td>
-    </tr>
-    <tr>
-      <td></td> <!-- Пустые ячейки для второго ряда -->
-      <td></td>
-      <td>Считали файл построчно и для каждой строки считаем пробелы.</td>
-      <td>6,7719</td>
-    </tr>
-  </tbody>
+  <table>
+	<tbody>
+		<tr>
+			<td>Файл</td>
+			<td>Размер файла (байт)</td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td rowspan="6"></td>
+			<td rowspan="6"></td>
+			<td rowspan="6"></td>
+			<td rowspan="3"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+		</tr>
+		<tr>
+			<td rowspan="3"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+		</tr>
+		<tr>
+			<td rowspan="6"></td>
+			<td rowspan="6"></td>
+			<td rowspan="6"></td>
+			<td rowspan="3"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+		</tr>
+		<tr>
+			<td rowspan="3"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+		</tr>
+		<tr>
+			<td rowspan="6"></td>
+			<td rowspan="6"></td>
+			<td rowspan="6"></td>
+			<td rowspan="3"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+		</tr>
+		<tr>
+			<td rowspan="3"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+		</tr>
+	</tbody>
+</table>
 </table>
 </figure> 
