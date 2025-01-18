@@ -19,28 +19,28 @@ namespace CountSpacesInFiles
 
                 foreach (var file in txtFiles)
                 {
-                    Console.WriteLine($"Processing file: {file}");
+                    Console.WriteLine($"Обработка файла: {file}...");
 
                     // Способ a: Считываем файл полностью асинхронно
                     var startTime = DateTime.Now;
                     int totalSpacesAsync = await CountSpacesInFileAsync(file);
                     var endTime = DateTime.Now;
                     var elapsedTimeAsync = endTime - startTime;
-                    Console.WriteLine($"File read fully async. Time: {elapsedTimeAsync.TotalMilliseconds} ms, Spaces: {totalSpacesAsync}");
+                    Console.WriteLine($"Файл полностью асинхронно прочитан. Время: {elapsedTimeAsync.TotalMilliseconds} ms, Количество пробелов: {totalSpacesAsync}");
 
                     // Способ b: Считываем файл построчно асинхронно
                     startTime = DateTime.Now;
                     int totalSpacesLineByLine = await CountSpacesLineByLineAsync(file);
                     endTime = DateTime.Now;
                     var elapsedTimeLineByLine = endTime - startTime;
-                    Console.WriteLine($"File read line by line async. Time: {elapsedTimeLineByLine.TotalMilliseconds} ms, Spaces: {totalSpacesLineByLine}");
+                    Console.WriteLine($"Файл полностью асинхронно прочитан. Время: {elapsedTimeLineByLine.TotalMilliseconds} ms, Количество пробелов: {totalSpacesLineByLine}");
 
                     Console.WriteLine();
                 }
             }
             else
             {
-                Console.WriteLine("Directory not found.");
+                Console.WriteLine("Папка не найдена");
             }
         }
 
