@@ -1,8 +1,4 @@
-﻿using System;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 
 namespace CountSpacesInFiles
 {
@@ -124,9 +120,11 @@ namespace CountSpacesInFiles
                 messageService.ShowMessageSuccess($"Обработка файла: {file} размер файла {fileSize} байт...");
 
                 // Способ a: Считываем файл полностью
+                messageService.ShowMessage("Cчитали файл полностью асинхронно и потом посчитали пробелы.");
                 await fileProcessor.ProcessFileAsync(file, new FullFileSpaceCounter());
 
                 // Способ b: Считываем файл построчно
+                messageService.ShowMessage("Cчитали файл построчно и для каждой строчки считаем пробелы.");
                 await fileProcessor.ProcessFileAsync(file, new LineByLineSpaceCounter());
 
                 Console.WriteLine();
