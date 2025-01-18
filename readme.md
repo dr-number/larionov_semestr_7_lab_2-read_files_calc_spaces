@@ -10,18 +10,21 @@ a) считали файл полностью асинхронно и потом
       <p align="center">Чтение 3 txt файлов по 3 раза</p>
    </p>
   <table>
-	<tbody>
+	<thead>
 		<tr>
-			<td rowspan="2"></td>
-			<td rowspan="2"></td>
-			<td rowspan="2"></td>
-			<td rowspan="2"></td>
-			<td colspan="2"></td>
+			<td rowspan="2">№ попытки</td>
+<td rowspan="2">файл</td>
+			<td rowspan="2">размер файла (байт)</td>
+			<td rowspan="2">Количество пробелов</td>
+			
+			<td colspan="2">Время исполнения метода</td>
 		</tr>
 		<tr>
-			<td></td>
-			<td></td>
+			<td>Cчитали файл полностью асинхронно и потом посчитали пробелы</td>
+			<td>Cчитали файл построчно и для каждой строчки считаем пробелы</td>
 		</tr>
+        </thead>
+<tbody>
 		<tr>
 			<td rowspan="6"></td>
 			<td rowspan="6"></td>
