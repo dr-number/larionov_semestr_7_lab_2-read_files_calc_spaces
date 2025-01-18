@@ -21,10 +21,11 @@ a) считали файл полностью асинхронно и потом посчитали пробелы;
   </thead>
   <tbody>
     <tr>
-      <td rowspan="3">soviet_computers.txt</td>
-      <td rowspan="3">12824</td>
-      <td rowspan="3">882</td>
+      <td rowspan="6">soviet_computers.txt</td>
+      <td rowspan="6">12824</td>
+      <td rowspan="6">882</td>
       <td  rowspan="3">—читали файл полностью асинхронно и потом посчитали пробелы.</td>
+      <td  rowspan="3">Cчитали файл построчно и дл€ каждой строчки считаем пробелы.</td>
       <td>6,7719</td>
     </tr>
     <tr>
@@ -34,10 +35,20 @@ a) считали файл полностью асинхронно и потом посчитали пробелы;
       <td>6,7719</td>
     </tr>
     <tr>
-      <td rowspan="3">soviet_computers.txt</td>
-      <td rowspan="3">12824</td>
-      <td rowspan="3">882</td>
+      <td>6,7719</td>
+    </tr>
+    <tr>
+      <td>6,7719</td>
+    </tr>
+    <tr>
+      <td>6,7719</td>
+    </tr>
+    <tr>
+      <td rowspan="6">soviet_computers.txt</td>
+      <td rowspan="6">12824</td>
+      <td rowspan="6">882</td>
       <td  rowspan="3">—читали файл полностью асинхронно и потом посчитали пробелы.</td>
+      <td  rowspan="3">Cчитали файл построчно и дл€ каждой строчки считаем пробелы.</td>
       <td>6,7719</td>
     </tr>
     <tr>
@@ -47,10 +58,29 @@ a) считали файл полностью асинхронно и потом посчитали пробелы;
       <td>6,7719</td>
     </tr>
     <tr>
-      <td rowspan="3">soviet_computers.txt</td>
-      <td rowspan="3">12824</td>
-      <td rowspan="3">882</td>
+      <td>6,7719</td>
+    </tr>
+    <tr>
+      <td>6,7719</td>
+    </tr>
+    <tr>
+      <td>6,7719</td>
+    </tr>
+    <tr>
+      <td rowspan="6">soviet_computers.txt</td>
+      <td rowspan="6">12824</td>
+      <td rowspan="6">882</td>
       <td  rowspan="3">—читали файл полностью асинхронно и потом посчитали пробелы.</td>
+      <td  rowspan="3">Cчитали файл построчно и дл€ каждой строчки считаем пробелы.</td>
+      <td>6,7719</td>
+    </tr>
+    <tr>
+      <td>6,7719</td>
+    </tr>
+    <tr>
+      <td>6,7719</td>
+    </tr>
+    <tr>
       <td>6,7719</td>
     </tr>
     <tr>
