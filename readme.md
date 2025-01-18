@@ -27,10 +27,10 @@ a) считали файл полностью асинхронно и потом
 			<td rowspan="6">1</td>
 		</tr>
 		<tr>
-			<td rowspan="6">2</td>
+			<td>2</td>
 		</tr>
 		<tr>
-			<td rowspan="6">3</td>
+			<td>3</td>
 		</tr>
 		<tr>
 			<td>1,4471</td>
