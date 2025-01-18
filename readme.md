@@ -34,7 +34,30 @@ a) считали файл полностью асинхронно и потом посчитали пробелы;
       <td>6,7719</td>
     </tr>
     <tr>
-      <td colspan="5"></td>
+      <td rowspan="3">soviet_computers.txt</td>
+      <td rowspan="3">12824</td>
+      <td rowspan="3">882</td>
+      <td  rowspan="3">—читали файл полностью асинхронно и потом посчитали пробелы.</td>
+      <td>6,7719</td>
+    </tr>
+    <tr>
+      <td>6,7719</td>
+    </tr>
+    <tr>
+      <td>6,7719</td>
+    </tr>
+    <tr>
+      <td rowspan="3">soviet_computers.txt</td>
+      <td rowspan="3">12824</td>
+      <td rowspan="3">882</td>
+      <td  rowspan="3">—читали файл полностью асинхронно и потом посчитали пробелы.</td>
+      <td>6,7719</td>
+    </tr>
+    <tr>
+      <td>6,7719</td>
+    </tr>
+    <tr>
+      <td>6,7719</td>
     </tr>
   </tbody>
 </table>
