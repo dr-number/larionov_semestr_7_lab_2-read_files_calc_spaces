@@ -12,45 +12,23 @@ a) считали файл полностью асинхронно и потом
   <table>
 	<tbody>
 		<tr>
-			<td rowspan="2">№ попытки</td>
-			<td rowspan="2">Файл</td>
-			<td rowspan="2">Размер файла (байт)</td>
-			<td rowspan="2">Количество пробелов</td>
-			<td colspan="2">Метод</td>
-			<td rowspan="2">Время выполнения (ms)</td>
+			<td rowspan="2"></td>
+			<td rowspan="2"></td>
+			<td rowspan="2"></td>
+			<td rowspan="2"></td>
+			<td colspan="2"></td>
 		</tr>
 		<tr>
-			<td>Cчитали файл полностью асинхронно и потом посчитали пробелы</td>
-			<td>Cчитали файл построчно и для каждой строчки считаем пробелы</td>
-		</tr>
-		<tr>
-			<td rowspan="6">1</td>
-		</tr>
-		<tr>
-			<td rowspan="6">2</td>
-		</tr>
-		<tr>
-			<td rowspan="6">3</td>
-		</tr>
-		<tr>
-			<td>1,4471</td>
-		</tr>
-		<tr>
-			<td>0,688</td>
-		</tr>
-		<tr>
-			<td>2</td>
-			<td>soviet_computers.txt</td>
-			<td>14462</td>
-			<td>1046</td>
 			<td></td>
-			<td>0,6248</td>
+			<td></td>
 		</tr>
 		<tr>
-			<td rowspan="6">2</td>
-		</tr>
-		<tr>
-			<td rowspan="6">3</td>
+			<td rowspan="6"></td>
+			<td rowspan="6"></td>
+			<td rowspan="6"></td>
+			<td rowspan="6"></td>
+			<td></td>
+			<td></td>
 		</tr>
 		<tr>
 			<td></td>
@@ -58,35 +36,76 @@ a) считали файл полностью асинхронно и потом
 		</tr>
 		<tr>
 			<td></td>
-		</tr>
-		<tr>
 			<td></td>
 		</tr>
 		<tr>
-			<td>3</td>
-			<td>space.txt</td>
-			<td>6559</td>
-			<td>450</td>
 			<td></td>
 			<td></td>
 		</tr>
 		<tr>
 			<td></td>
-		</tr>
-		<tr>
-			<td></td>
-		</tr>
-		<tr> 
-			<td></td>
 			<td></td>
 		</tr>
 		<tr>
 			<td></td>
+			<td></td>
 		</tr>
 		<tr>
+			<td rowspan="6"></td>
+			<td rowspan="6"></td>
+			<td rowspan="6"></td>
+			<td rowspan="6"></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td rowspan="6"></td>
+			<td rowspan="6"></td>
+			<td rowspan="6"></td>
+			<td rowspan="6"></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
 			<td></td>
 		</tr>
 	</tbody>
-</table>
 </table>
 </figure> 
