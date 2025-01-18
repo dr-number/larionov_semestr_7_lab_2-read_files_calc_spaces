@@ -39,8 +39,8 @@ a) считали файл полностью асинхронно и потом
 			<td>0,688</td>
 		</tr>
 		<tr>
-			<td rowspan="6">2</td>
-			<td rowspan="6">soviet_computers.txt</td>
+			<td>2</td>
+			<td>soviet_computers.txt</td>
 			<td>14462</td>
 			<td>1046</td>
 			<td></td>
@@ -63,8 +63,8 @@ a) считали файл полностью асинхронно и потом
 			<td></td>
 		</tr>
 		<tr>
-			<td rowspan="6">3</td>
-			<td rowspan="6">space.txt</td>
+			<td>3</td>
+			<td>space.txt</td>
 			<td>6559</td>
 			<td>450</td>
 			<td></td>
