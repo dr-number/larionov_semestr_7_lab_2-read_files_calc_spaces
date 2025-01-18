@@ -20,7 +20,7 @@ a) считали файл полностью асинхронно и потом
 			<td rowspan="2">Время выполнения (ms)</td>
 		</tr>
 		<tr>
-			<td rowspan="6">1</td>
+			<td>1</td>
 			<td rowspan="6">simulation_theory.txt</td>
 			<td rowspan="6">12824</td>
 			<td rowspan="6">882</td>
