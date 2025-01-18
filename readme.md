@@ -21,7 +21,7 @@ a) считали файл полностью асинхронно и потом посчитали пробелы;
   </thead>
   <tbody>
     <tr>
-      <td>soviet_computers.txt</td>
+      <td rowspan="3">soviet_computers.txt</td>
       <td>12824</td>
       <td>882</td>
       <td>—читали файл полностью асинхронно и потом посчитали пробелы.</td>
