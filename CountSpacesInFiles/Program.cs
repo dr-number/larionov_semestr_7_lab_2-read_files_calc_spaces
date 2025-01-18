@@ -41,8 +41,8 @@ namespace CountSpacesInFiles
         Task<int> CountSpacesAsync(string filePath);
     }
 
-    // Считывание всего файла и подсчет пробелов
-    public class FullFileSpaceCounter : ISpaceCounter
+        // Считывание всего файла и подсчет пробелов
+        public class FullFileSpaceCounter : ISpaceCounter
     {
         public async Task<int> CountSpacesAsync(string filePath)
         {
@@ -110,7 +110,7 @@ namespace CountSpacesInFiles
 
             if (!Directory.Exists(directoryPath))
             {
-                messageService.ShowMessageError("Папка не найдена!\n");
+                messageService.ShowMessageError($"Папка \"{directoryPath}\" не найдена!\n");
                 return;
             }
 
@@ -135,13 +135,23 @@ namespace CountSpacesInFiles
 
         static async Task Main(string[] args)
         {
-            Console.ResetColor();
             Console.WriteLine("Ларионов гр. 410з Игра \"Асмнхронный подсчет пробелов\"!");
+
+            Console.ResetColor();
+            IMessageService messageService = new ConsoleMessageService();
+            
+            string directoryPath;
 
             while (true)
             {
-                string directoryPath = @"D:\semestr_7_technology_programming_texts_empty";
-                IMessageService messageService = new ConsoleMessageService();
+                Console.ResetColor();
+                Console.WriteLine("Введиье путь к директории с txt файлами: (по умолчанию будет использована текущая директория)");
+                directoryPath = Console.ReadLine();
+
+                if (directoryPath == null || directoryPath.Length == 0)
+                {
+                    directoryPath = Directory.GetCurrentDirectory();
+                }
 
                 await ProcessFilesInDirectoryAsync(directoryPath, messageService);
 
