@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -7,70 +6,45 @@ using System.Threading.Tasks;
 
 namespace CountSpacesInFiles
 {
-    class Program
+    // Абстракция для вывода сообщений
+    public interface IMessageService
     {
-        private const String INFO_ABOUT_VARIANT_A = "Cчитали файл полностью асинхронно и потом посчитали пробелы.";
-        private const String INFO_ABOUT_VARIANT_B = "Cчитали файл построчно и для каждой строчки считаем пробелы.";
+        void ShowMessage(string message);
+        void ShowMessageError(string message);
+        void ShowMessageSuccess(string message);
+    }
 
-        public static void ShowMessage(string message)
+    public class ConsoleMessageService : IMessageService
+    {
+        public void ShowMessage(string message)
         {
             Console.ResetColor();
             Console.WriteLine(message);
         }
-        public static void ShowMessageError(string message)
+
+        public void ShowMessageError(string message)
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine(message);
         }
-        public static void ShowMessageSuccess(string message)
+
+        public void ShowMessageSuccess(string message)
         {
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine(message);
         }
+    }
 
-        static async Task Main(string[] args)
-        {
-            string directoryPath = @"D:\semestr_7_technology_programming_texts";
+    // Интерфейс для подсчета пробелов
+    public interface ISpaceCounter
+    {
+        Task<int> CountSpacesAsync(string filePath);
+    }
 
-            if (!Directory.Exists(directoryPath))
-            {
-                ShowMessageError("Папка не найдена!\n");
-                return;
-            }
-            
-            var txtFiles = Directory.GetFiles(directoryPath, "*.txt");
-            if (txtFiles == null || txtFiles.Length == 0)
-            {
-                ShowMessageError($"В папке \"{directoryPath}\" нет txt файлов!\n");
-                return;
-            }
-
-            foreach (var file in txtFiles)
-            {
-                long fileSize = new FileInfo(file).Length;
-                ShowMessageSuccess($"Обработка файла: {file} размер файла {fileSize} байт...");
-
-                // Способ a: Считываем файл полностью асинхронно
-                var startTime = DateTime.Now;
-                int totalSpacesAsync = await CountSpacesInFileAsync(file);
-                var endTime = DateTime.Now;
-                var elapsedTimeAsync = endTime - startTime;
-                ShowMessage($"\nСпособ a.\n{INFO_ABOUT_VARIANT_A}\nФайл полностью асинхронно прочитан. Время: {elapsedTimeAsync.TotalMilliseconds} ms, Количество пробелов: {totalSpacesAsync}");
-
-                // Способ b: Считываем файл построчно асинхронно
-                startTime = DateTime.Now;
-                int totalSpacesLineByLine = await CountSpacesLineByLineAsync(file);
-                endTime = DateTime.Now;
-                var elapsedTimeLineByLine = endTime - startTime;
-                ShowMessage($"\nСпособ б.\n{INFO_ABOUT_VARIANT_B}\nФайл полностью асинхронно прочитан. Время: {elapsedTimeLineByLine.TotalMilliseconds} ms, Количество пробелов: {totalSpacesLineByLine}");
-
-                Console.WriteLine();
-            }
-      
-        }
-
-        // Способ a: Считываем файл полностью и считаем пробелы
-        private static async Task<int> CountSpacesInFileAsync(string filePath)
+    // Считывание всего файла и подсчет пробелов
+    public class FullFileSpaceCounter : ISpaceCounter
+    {
+        public async Task<int> CountSpacesAsync(string filePath)
         {
             using (var reader = new StreamReader(filePath, Encoding.UTF8))
             {
@@ -78,9 +52,12 @@ namespace CountSpacesInFiles
                 return content.Count(c => c == ' ');
             }
         }
+    }
 
-        // Способ b: Считываем файл построчно и считаем пробелы в каждой строке
-        private static async Task<int> CountSpacesLineByLineAsync(string filePath)
+    // Считывание файла построчно и подсчет пробелов
+    public class LineByLineSpaceCounter : ISpaceCounter
+    {
+        public async Task<int> CountSpacesAsync(string filePath)
         {
             int totalSpaces = 0;
             using (var reader = new StreamReader(filePath, Encoding.UTF8))
@@ -92,6 +69,88 @@ namespace CountSpacesInFiles
                 }
             }
             return totalSpaces;
+        }
+    }
+
+    // Класс для работы с файлами и подсчета пробелов
+    public class FileProcessor
+    {
+        private readonly IMessageService _messageService;
+
+        public FileProcessor(IMessageService messageService)
+        {
+            _messageService = messageService;
+        }
+
+        public async Task ProcessFileAsync(string filePath, ISpaceCounter spaceCounter)
+        {
+            long fileSize = new FileInfo(filePath).Length;
+            _messageService.ShowMessageSuccess($"Обработка файла: {filePath} размер файла {fileSize} байт...");
+
+            var startTime = DateTime.Now;
+            int totalSpaces = await spaceCounter.CountSpacesAsync(filePath);
+            var endTime = DateTime.Now;
+            var elapsedTime = endTime - startTime;
+
+            _messageService.ShowMessage($"Время: {elapsedTime.TotalMilliseconds} ms, Количество пробелов: {totalSpaces}");
+        }
+    }
+
+    class Program
+    {
+        public static bool isQuestion(string textQuestion)
+        {
+            Console.WriteLine("\n" + textQuestion);
+            return Console.ReadLine()?.ToLower() != "n";
+        }
+
+        public static async Task ProcessFilesInDirectoryAsync(string directoryPath, IMessageService messageService)
+        {
+            var fileProcessor = new FileProcessor(messageService);
+
+            if (!Directory.Exists(directoryPath))
+            {
+                messageService.ShowMessageError("Папка не найдена!\n");
+                return;
+            }
+
+            var txtFiles = Directory.GetFiles(directoryPath, "*.txt");
+            if (txtFiles == null || txtFiles.Length == 0)
+            {
+                messageService.ShowMessageError($"В папке \"{directoryPath}\" нет txt файлов!\n");
+                return;
+            }
+
+            foreach (var file in txtFiles)
+            {
+                // Способ a: Считываем файл полностью
+                await fileProcessor.ProcessFileAsync(file, new FullFileSpaceCounter());
+
+                // Способ b: Считываем файл построчно
+                await fileProcessor.ProcessFileAsync(file, new LineByLineSpaceCounter());
+
+                Console.WriteLine();
+            }
+        }
+
+        static async Task Main(string[] args)
+        {
+            Console.ResetColor();
+            Console.WriteLine("Ларионов гр. 410з Игра \"Асмнхронный подсчет пробелов\"!");
+
+            while (true)
+            {
+                string directoryPath = @"D:\semestr_7_technology_programming_texts_empty";
+                IMessageService messageService = new ConsoleMessageService();
+
+                await ProcessFilesInDirectoryAsync(directoryPath, messageService);
+
+                Console.ResetColor();
+                if (!isQuestion("Повторить процедуру [y/n]?"))
+                {
+                    break;
+                }
+            }
         }
     }
 }
