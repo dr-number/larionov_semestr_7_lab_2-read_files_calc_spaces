@@ -9,6 +9,8 @@ namespace CountSpacesInFiles
 {
     class Program
     {
+        private const String INFO_ABOUT_VARIANT_A = "Cчитали файл полностью асинхронно и потом посчитали пробелы.";
+        private const String INFO_ABOUT_VARIANT_B = "Cчитали файл построчно и для каждой строчки считаем пробелы.";
         static async Task Main(string[] args)
         {
             string directoryPath = @"D:\semestr_7_technology_programming_texts";
@@ -26,14 +28,14 @@ namespace CountSpacesInFiles
                     int totalSpacesAsync = await CountSpacesInFileAsync(file);
                     var endTime = DateTime.Now;
                     var elapsedTimeAsync = endTime - startTime;
-                    Console.WriteLine($"Файл полностью асинхронно прочитан. Время: {elapsedTimeAsync.TotalMilliseconds} ms, Количество пробелов: {totalSpacesAsync}");
+                    Console.WriteLine($"\nСпособ a.\n{INFO_ABOUT_VARIANT_A}\nФайл полностью асинхронно прочитан. Время: {elapsedTimeAsync.TotalMilliseconds} ms, Количество пробелов: {totalSpacesAsync}");
 
                     // Способ b: Считываем файл построчно асинхронно
                     startTime = DateTime.Now;
                     int totalSpacesLineByLine = await CountSpacesLineByLineAsync(file);
                     endTime = DateTime.Now;
                     var elapsedTimeLineByLine = endTime - startTime;
-                    Console.WriteLine($"Файл полностью асинхронно прочитан. Время: {elapsedTimeLineByLine.TotalMilliseconds} ms, Количество пробелов: {totalSpacesLineByLine}");
+                    Console.WriteLine($"\nСпособ б.\n{INFO_ABOUT_VARIANT_B}\nФайл полностью асинхронно прочитан. Время: {elapsedTimeLineByLine.TotalMilliseconds} ms, Количество пробелов: {totalSpacesLineByLine}");
 
                     Console.WriteLine();
                 }
