@@ -84,9 +84,6 @@ namespace CountSpacesInFiles
 
         public async Task ProcessFileAsync(string filePath, ISpaceCounter spaceCounter)
         {
-            long fileSize = new FileInfo(filePath).Length;
-            _messageService.ShowMessageSuccess($"Обработка файла: {filePath} размер файла {fileSize} байт...");
-
             var startTime = DateTime.Now;
             int totalSpaces = await spaceCounter.CountSpacesAsync(filePath);
             var endTime = DateTime.Now;
@@ -123,6 +120,9 @@ namespace CountSpacesInFiles
 
             foreach (var file in txtFiles)
             {
+                long fileSize = new FileInfo(file).Length;
+                messageService.ShowMessageSuccess($"Обработка файла: {file} размер файла {fileSize} байт...");
+
                 // Способ a: Считываем файл полностью
                 await fileProcessor.ProcessFileAsync(file, new FullFileSpaceCounter());
 
@@ -135,7 +135,7 @@ namespace CountSpacesInFiles
 
         static async Task Main(string[] args)
         {
-            Console.WriteLine("Ларионов гр. 410з Игра \"Асмнхронный подсчет пробелов\"!");
+            Console.WriteLine("Ларионов гр. 410з \"Асмнхронный подсчет пробелов\"!");
 
             Console.ResetColor();
             IMessageService messageService = new ConsoleMessageService();
