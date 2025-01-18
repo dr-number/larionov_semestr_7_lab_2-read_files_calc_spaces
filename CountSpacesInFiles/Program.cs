@@ -1,0 +1,72 @@
+﻿using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CountSpacesInFiles
+{
+    class Program
+    {
+        static async Task Main(string[] args)
+        {
+            string directoryPath = @"D:\semestr_7_technology_programming_texts";
+
+            if (Directory.Exists(directoryPath))
+            {
+                var txtFiles = Directory.GetFiles(directoryPath, "*.txt");
+
+                foreach (var file in txtFiles)
+                {
+                    Console.WriteLine($"Processing file: {file}");
+
+                    // Способ a: Считываем файл полностью асинхронно
+                    var startTime = DateTime.Now;
+                    int totalSpacesAsync = await CountSpacesInFileAsync(file);
+                    var endTime = DateTime.Now;
+                    var elapsedTimeAsync = endTime - startTime;
+                    Console.WriteLine($"File read fully async. Time: {elapsedTimeAsync.TotalMilliseconds} ms, Spaces: {totalSpacesAsync}");
+
+                    // Способ b: Считываем файл построчно асинхронно
+                    startTime = DateTime.Now;
+                    int totalSpacesLineByLine = await CountSpacesLineByLineAsync(file);
+                    endTime = DateTime.Now;
+                    var elapsedTimeLineByLine = endTime - startTime;
+                    Console.WriteLine($"File read line by line async. Time: {elapsedTimeLineByLine.TotalMilliseconds} ms, Spaces: {totalSpacesLineByLine}");
+
+                    Console.WriteLine();
+                }
+            }
+            else
+            {
+                Console.WriteLine("Directory not found.");
+            }
+        }
+
+        // Способ a: Считываем файл полностью и считаем пробелы
+        private static async Task<int> CountSpacesInFileAsync(string filePath)
+        {
+            using (var reader = new StreamReader(filePath, Encoding.UTF8))
+            {
+                var content = await reader.ReadToEndAsync();
+                return content.Count(c => c == ' ');
+            }
+        }
+
+        // Способ b: Считываем файл построчно и считаем пробелы в каждой строке
+        private static async Task<int> CountSpacesLineByLineAsync(string filePath)
+        {
+            int totalSpaces = 0;
+            using (var reader = new StreamReader(filePath, Encoding.UTF8))
+            {
+                string line;
+                while ((line = await reader.ReadLineAsync()) != null)
+                {
+                    totalSpaces += line.Count(c => c == ' ');
+                }
+            }
+            return totalSpaces;
+        }
+    }
+}
