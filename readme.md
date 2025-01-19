@@ -12,7 +12,7 @@ a) считали файл полностью асинхронно и потом
   <table>
 	<thead>
 		<tr>
-			<td rowspan="2">№ попытки</td>
+			<td rowspan="2">№</td>
 			<td rowspan="2">файл</td>
 			<td rowspan="2">размер файла (байт)</td>
 			<td rowspan="2">Количество пробелов</td>
@@ -30,26 +30,20 @@ a) считали файл полностью асинхронно и потом
 			<td rowspan="6">12824</td>
 			<td rowspan="6">882</td>
 			<td></td>
+		</tr>
+		<tr>
 			<td></td>
 		</tr>
 		<tr>
 			<td></td>
+		</tr>
+		<tr>
 			<td></td>
 		</tr>
 		<tr>
 			<td></td>
-			<td></td>
 		</tr>
 		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
 			<td></td>
 		</tr>
 		<tr>
@@ -58,26 +52,20 @@ a) считали файл полностью асинхронно и потом
 			<td rowspan="6">14462</td>
 			<td rowspan="6">1046</td>
 			<td></td>
+		</tr>
+		<tr>
 			<td></td>
 		</tr>
 		<tr>
 			<td></td>
+		</tr>
+		<tr>
 			<td></td>
 		</tr>
 		<tr>
 			<td></td>
-			<td></td>
 		</tr>
 		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
 			<td></td>
 		</tr>
 		<tr>
@@ -86,26 +74,20 @@ a) считали файл полностью асинхронно и потом
 			<td rowspan="6">6559</td>
 			<td rowspan="6">450</td>
 			<td></td>
+		</tr>
+		<tr>
 			<td></td>
 		</tr>
 		<tr>
 			<td></td>
+		</tr>
+		<tr>
 			<td></td>
 		</tr>
 		<tr>
 			<td></td>
-			<td></td>
 		</tr>
 		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
 			<td></td>
 		</tr>
 	</tbody>
