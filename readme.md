@@ -25,35 +25,7 @@ a) считали файл полностью асинхронно и потом
         </thead>
 <tbody>
 		<tr>
-			<td rowspan="6"></td>
-			<td rowspan="6"></td>
-			<td rowspan="6"></td>
-			<td rowspan="6"></td>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td></td>
-			<td></td>
-		</tr>
-		<tr>
-			<td rowspan="6"></td>
+			<td rowspan="6">1</td>
 			<td rowspan="6"></td>
 			<td rowspan="6"></td>
 			<td rowspan="6"></td>
@@ -81,7 +53,35 @@ a) считали файл полностью асинхронно и потом
 			<td></td>
 		</tr>
 		<tr>
+			<td rowspan="6">2</td>
 			<td rowspan="6"></td>
+			<td rowspan="6"></td>
+			<td rowspan="6"></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td rowspan="6">3</td>
 			<td rowspan="6"></td>
 			<td rowspan="6"></td>
 			<td rowspan="6"></td>
