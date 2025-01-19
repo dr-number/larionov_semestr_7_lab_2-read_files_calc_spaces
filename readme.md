@@ -85,3 +85,10 @@ a) считали файл полностью асинхронно и потом
 	</tbody>
 </table>
 </figure> 
+
+<figure>
+   <p align="center">
+      <img src="https://github.com/dr-number/larionov_semestr_7_lab_2-read_files_calc_spaces/blob/main/for_read_me/2.png">
+      <p align="center">Если txt файлы отсутствуют</p>
+   </p>
+</figure>
