@@ -40,6 +40,7 @@ a) считали файл полностью асинхронно и потом
 			<td></td>
 		</tr>
 		<tr>
+			<td>3</td>
 			<td></td>
 			<td></td>
 		</tr>
@@ -48,14 +49,17 @@ a) считали файл полностью асинхронно и потом
 			<td rowspan="3">soviet_computers.txt</td>
 			<td rowspan="3">14462</td>
 			<td rowspan="3">1046</td>
+			<td>1</td>
 			<td></td>
 			<td></td>
 		</tr>
 		<tr>
+			<td>2</td>
 			<td></td>
 			<td></td>
 		</tr>
 		<tr>
+			<td>3</td>
 			<td></td>
 			<td></td>
 		</tr>
@@ -64,14 +68,17 @@ a) считали файл полностью асинхронно и потом
 			<td rowspan="3">space.txt</td>
 			<td rowspan="3">6559</td>
 			<td rowspan="3">450</td>
+			<td>1</td>
 			<td></td>
 			<td></td>
 		</tr>
 		<tr>
+			<td>2</td>
 			<td></td>
 			<td></td>
 		</tr>
 		<tr>
+			<td>3</td>
 			<td></td>
 			<td></td>
 		</tr>
