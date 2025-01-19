@@ -7,7 +7,11 @@ a) считали файл полностью асинхронно и потом
 <figure>
    <p align="center">
       <img src="https://github.com/dr-number/larionov_semestr_7_lab_2-read_files_calc_spaces/blob/main/for_read_me/1.png">
-      <p align="center">Чтение 3 txt файлов по 3 раза</p>
+      <p align="center">Чтение 3 txt файлов больших размеров по 3 раза</p>
+   </p>
+   <p align="center">
+      <img src="https://github.com/dr-number/larionov_semestr_7_lab_2-read_files_calc_spaces/blob/main/for_read_me/3.png">
+      <p align="center">Чтение 3 txt файлов меньшмх размеров по 3 раза</p>
    </p>
   <table>
 	<thead>
