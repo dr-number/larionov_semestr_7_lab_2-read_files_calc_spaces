@@ -82,6 +82,63 @@ a) считали файл полностью асинхронно и потом
 			<td>0,5618</td>
 			<td>0,7756</td>
 		</tr>
+		<tr>
+			<td rowspan="3">4</td>
+			<td rowspan="3">C#.txt</td>
+			<td rowspan="3">1721</td>
+			<td rowspan="3">135</td>
+			<td>1</td>
+			<td>7,7607</td>
+			<td>3,1749</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td rowspan="3">5</td>
+			<td rowspan="3">kotlin.txt</td>
+			<td rowspan="3">1361</td>
+			<td rowspan="3">96</td>
+			<td>1</td>
+			<td>0,3124</td>
+			<td>0,3567</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td rowspan="3">6</td>
+			<td rowspan="3">python.txt</td>
+			<td rowspan="3">1772</td>
+			<td rowspan="3">125</td>
+			<td>1</td>
+			<td>0,3019</td>
+			<td>0,5347</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td></td>
+			<td></td>
+		</tr>
 	</tbody>
 </table>
 </figure> 
