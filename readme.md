@@ -147,6 +147,8 @@ a) считали файл полностью асинхронно и потом
 </table>
 </figure> 
 
+**Вывод: на больших 3 файлах от 450 до 1046 байт включительно 3 проверки показали что в 7 из 9 случаев метод "Cчитали файл построчно и для каждой строчки считаем пробелы" отрабатывает быстрее**
+
 <figure>
    <p align="center">
       <img src="https://github.com/dr-number/larionov_semestr_7_lab_2-read_files_calc_spaces/blob/main/for_read_me/2.png">
