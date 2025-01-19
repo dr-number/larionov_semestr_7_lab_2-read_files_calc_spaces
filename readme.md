@@ -33,7 +33,7 @@ a) считали файл полностью асинхронно и потом
 			<td rowspan="3">1</td>
 			<td rowspan="3">simulation_theory.txt</td>
 			<td rowspan="3">12824</td>
-			<td rowspan="3">882</td>
+			<td rowspan="3">882</td> 
 			<td>1</td>
 			<td style="color: red;">75,7022</td> 
 			<td style="color: green;">1,6916</td>
