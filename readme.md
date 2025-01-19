@@ -26,7 +26,7 @@ a) считали файл полностью асинхронно и потом
 <tbody>
 		<tr>
 			<td rowspan="6">1</td>
-			<td rowspan="6"></td>
+			<td rowspan="6">simulation_theory.txt</td>
 			<td rowspan="6"></td>
 			<td rowspan="6"></td>
 			<td></td>
@@ -54,7 +54,7 @@ a) считали файл полностью асинхронно и потом
 		</tr>
 		<tr>
 			<td rowspan="6">2</td>
-			<td rowspan="6"></td>
+			<td rowspan="6">soviet_computers.txt</td>
 			<td rowspan="6"></td>
 			<td rowspan="6"></td>
 			<td></td>
@@ -82,7 +82,7 @@ a) считали файл полностью асинхронно и потом
 		</tr>
 		<tr>
 			<td rowspan="6">3</td>
-			<td rowspan="6"></td>
+			<td rowspan="6">space.txt</td>
 			<td rowspan="6"></td>
 			<td rowspan="6"></td>
 			<td></td>
