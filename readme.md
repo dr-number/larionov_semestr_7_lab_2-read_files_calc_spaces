@@ -45,23 +45,23 @@ a) считали файл полностью асинхронно и потом
 			<td>6,2327</td>
 		</tr>
 		<tr>
-			<td rowspan="3">2</td>
+			<td rowspan="3">4</td>
 			<td rowspan="3">soviet_computers.txt</td>
 			<td rowspan="3">14462</td>
 			<td rowspan="3">1046</td>
-			<td>1</td>
-			<td>6,1167</td>
-			<td>0,7181</td>
+			<td>4</td>
+			<td></td>
+			<td></td>
 		</tr>
 		<tr>
-			<td>2</td>
-			<td>6,9144</td>
-			<td>0,6825</td>
+			<td>5</td>
+			<td></td>
+			<td></td>
 		</tr>
 		<tr>
-			<td>3</td>
-			<td>0,5335</td>
-			<td>0,6945</td>
+			<td>6</td>
+			<td></td>
+			<td></td>
 		</tr>
 		<tr>
 			<td rowspan="3">3</td>
