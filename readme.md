@@ -12,11 +12,12 @@ a) считали файл полностью асинхронно и потом
   <table>
 	<thead>
 		<tr>
-			<td rowspan="2">№и</td>
+			<td rowspan="2">№</td>
 			<td rowspan="2">файл</td>
 			<td rowspan="2">размер файла (байт)</td>
 			<td rowspan="2">Количество пробелов</td>
 			<td colspan="2">Время исполнения метода</td>
+			<td colspan="2">№ попытки</td>
 		</tr>
 		<tr>
 			<td>Cчитали файл полностью асинхронно и потом посчитали пробелы</td>
@@ -29,10 +30,12 @@ a) считали файл полностью асинхронно и потом
 			<td rowspan="3">simulation_theory.txt</td>
 			<td rowspan="3">12824</td>
 			<td rowspan="3">882</td>
+			<td>1</td>
 			<td></td>
 			<td></td>
 		</tr>
 		<tr>
+			<td>2</td>
 			<td></td>
 			<td></td>
 		</tr>
