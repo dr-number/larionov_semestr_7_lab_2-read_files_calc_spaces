@@ -25,10 +25,10 @@ a) считали файл полностью асинхронно и потом
         </thead>
 <tbody>
 		<tr>
-			<td rowspan="6">1</td>
-			<td rowspan="6">simulation_theory.txt</td>
-			<td rowspan="6">12824</td>
-			<td rowspan="6">882</td>
+			<td rowspan="3">1</td>
+			<td rowspan="3">simulation_theory.txt</td>
+			<td rowspan="3">12824</td>
+			<td rowspan="3">882</td>
 			<td></td>
 			<td></td>
 		</tr>
@@ -53,10 +53,10 @@ a) считали файл полностью асинхронно и потом
 			<td></td>
 		</tr>
 		<tr>
-			<td rowspan="6">2</td>
-			<td rowspan="6">soviet_computers.txt</td>
-			<td rowspan="6">14462</td>
-			<td rowspan="6">1046</td>
+			<td rowspan="3">2</td>
+			<td rowspan="3">soviet_computers.txt</td>
+			<td rowspan="3">14462</td>
+			<td rowspan="3">1046</td>
 			<td></td>
 			<td></td>
 		</tr>
@@ -81,10 +81,10 @@ a) считали файл полностью асинхронно и потом
 			<td></td>
 		</tr>
 		<tr>
-			<td rowspan="6">3</td>
-			<td rowspan="6">space.txt</td>
-			<td rowspan="6">6559</td>
-			<td rowspan="6">450</td>
+			<td rowspan="3">3</td>
+			<td rowspan="3">space.txt</td>
+			<td rowspan="3">6559</td>
+			<td rowspan="3">450</td>
 			<td></td>
 			<td></td>
 		</tr>
